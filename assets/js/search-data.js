@@ -44,16 +44,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "news-a-simple-inline-announcement-1",
-          title: 'A simple inline announcement 1.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+        },{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-i-have-attented-to-the-international-workshop-on-magnetic-particle-imaging-in-flüeli-ranft-switzerland",
+          title: 'I have attented to the International Workshop on MAgnetic Particle Imaging in Flüeli-Ranft,...',
+          description: "",
+          section: "News",},{id: "news-i-have-visited-the-mpi-labs-in-xi-an-and-beijing-china",
+          title: 'I have visited the MPI labs in Xi’an and Beijing, China!',
+          description: "",
+          section: "News",},{id: "news-mortar-board-our-paper-has-been-accepted-to-iop-physics-in-medicine-amp-amp-biology",
+          title: ':mortar_board: Our paper has been accepted to IOP Physics in Medicine &amp;amp;amp; Biology!...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
