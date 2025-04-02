@@ -8,7 +8,8 @@
     NUMBER = {18},
     ARTICLE-NUMBER = {3278},
     DOI={10.3390/math10183278},
-   selected={true}
+    abstract= {Magnetic Particle Imaging is an imaging modality that exploits the non-linear magnetization response of superparamagnetic nanoparticles to a dynamic magnetic field. In the multivariate case, measurement-based reconstruction approaches are common and involve a system matrix whose acquisition is time consuming and needs to be repeated whenever the scanning setup changes. Our approach relies on reconstruction formulae derived from a mathematical model of the MPI signal encoding. A particular feature of the reconstruction formulae and the corresponding algorithms is that these are independent of the particular scanning trajectories. In this paper, we present basic ways of leveraging this independence property to enhance the quality of the reconstruction by merging data from different scans. In particular, we show how to combine scans of the same specimen under different rotation angles. We demonstrate the potential of the proposed techniques with numerical experiments.},
+    selected={true}
 }
 
 @article{gapyak2023multipatch,
@@ -21,6 +22,7 @@ issn = {0377-0427},
 doi = {https://doi.org/10.1016/j.cam.2024.116046},
 author = {Vladyslav Gapyak and Thomas März and Andreas Weinmann},
 keywords = {Magnetic Particle Imaging, Model-based reconstruction, Total Variation, Phase space, Inverse problems, Variational regularization},
+abstract={Magnetic Particle Imaging is an emerging imaging modality through which it is possible to detect tracers containing superparamagnetic nanoparticles. The exposure of the particles to dynamic magnetic fields generates a non-linear response that is used to locate the particles and produce an image of their distribution. The bounding box that can be covered by a single scan curve depends on the strength of the gradients of the magnetic fields applied, which is limited due to the risk of causing peripheral nerve stimulation (PNS) in the patients. To address this issue, multiple scans are performed. The scan data must be merged together to produce reconstructions of larger regions of interest. In this paper we propose a mathematical framework which can deal with rather general multi-patching scenarios including rigid transformations of the field of view (FoV), the specimen and of the scanner. We show the flexibility of this framework in a variety of different scanning scenarios. Moreover, we describe an iterative reconstruction algorithm that yields a reconstruction of the target distribution by minimizing a convex functional which includes positivity constraints and sparsity enforcing priors. We show its convergence to a minimizer and perform numerical experiments on simulated data.},
 selected={true}
 }
 
@@ -33,6 +35,7 @@ selected={true}
     pages = {025028},
     year = {2025},
     doi = {10.1088/1361-6560/ada5a1},
+    abstract={Objective. Magnetic particle imaging (MPI) is an emerging medical imaging modality which has gained increasing interest in recent years. Among the benefits of MPI are its high temporal resolution, and that the technique does not expose the specimen to any kind of ionizing radiation. It is based on the non-linear response of magnetic nanoparticles to an applied magnetic field. From the electric signal measured in receive coils, the particle concentration has to be reconstructed. Due to the ill-posedness of the reconstruction problem, various regularization methods have been proposed for reconstruction ranging from early stopping methods, via classical Tikhonov regularization and iterative methods to modern machine learning approaches. In this work, we contribute to the latter class: we propose a Plug-and-Play approach based on a generic zero-shot denoiser with an L1-prior. Approach. We validate the reconstruction parameters of the method on a hybrid dataset and compare it with the baseline Tikhonov, ART, DIP and the previous PP-MPI, which is a Plug-and-Play method with denoiser trained on MPI-friendly data. Main results. We derive a Plug-and-Play reconstruction method based on a generic zero-shot denoiser. Addressing (hyper)parameter selection, we perform an extended parameter search on a hybrid validation dataset we produced and apply the derived parameters for reconstruction on the 3D Open MPI Dataset. We offer a quantitative and qualitative evaluation of the zero-shot Plug-and-Play approach on the 3D Open MPI dataset with the validated parameters. Moreover, we show the quality of the approach with different levels of preprocessing of the data. Significance. The proposed method employs a zero-shot denoiser which has not been trained for the MPI reconstruction task and therefore saves the cost for training. Moreover, it offers a method that can be potentially applied in future MPI contexts.}
 selected={true}
 }
 %%% Proceedings
@@ -47,6 +50,7 @@ selected={true}
     month = {12},
     issn = {0094-243X},
     doi = {10.1063/5.0178921},
+    abstract = {Magnetic Particle Imaging (MPI) is an emerging imaging modality and is currently a very active field of research. In the multivariate MPI setup images are usually reconstructed using a system matrix which is obtained by a time-consuming measurement procedure. We approach the reconstruction problem by employing a mathematical model which we introduced in an earlier work and which is based on the MPI signal encoding. Here, we present an enhanced two-stage reconstruction algorithm derived from the decomposition of the imaging process provided by the model. In the first stage of the algorithm we propose a variational formulation together with adequate regularization which improves our reconstruction results.}
 }
 @article{marz2022icnaam,
     author = {März, Thomas and Gapyak, Vladyslav and Weinmann, Andreas},
@@ -59,6 +63,7 @@ selected={true}
     month = {06},
     issn = {0094-243X},
     doi = {10.1063/5.0212522},
+    abstract={Magnetic Particle Imaging (MPI) is an emerging imaging modality and a very active field of research. In the multivariate MPI setup images are usually reconstructed using a system matrix which is obtained by a time-consuming measurement procedure. We approach the reconstruction problem by employing a mathematical model which is based on the MPI signal encoding and the properties of the MPI Core Operator. Here, we present a reconstruction algorithm which features two stages: in the first stage, we estimate components of the MPI Core Operator by using a variational formulation. In the second stage, the image is reconstructed by regularized deconvolution applied to the components of the MPI Core Operator robustly estimated in the first stage. We demonstrate the potential of our algorithm with examples.}
 }
 
 @article{gapyak2022icnaam,
@@ -72,6 +77,7 @@ selected={true}
     month = {06},
     issn = {0094-243X},
     doi = {10.1063/5.0213070},
+    abstract={Magnetic Particle Imaging is a scanning modality that exploits the response of superparamagnetic nanoparticles to a dynamic magnetic field. In the multivariate case measurement-based reconstruction approaches are common and involve a system-matrix whose acquisition is time consuming and needs to be repeated whenever the scanning setup changes. Our approach uses a mathematical model, based on the MPI encoding of the signal, that is in particular independent of the scanning trajectories. We present basic ways of leveraging this independence property to enhance the quality of the reconstruction by using data from different scans. We demonstrate the potential of our approach with examples.}
 }
 
 @article{gapyak2023amee,
@@ -105,4 +111,5 @@ year={2023},
    month={09},
     journal={ArXiv},
     doi={10.48550/arXiv.2309.06254},
+abstract={Magnetic Particle Imaging (MPI) is a promising noninvasive in vivo imaging modality that makes it possible to map the spatial distribution of superparamagnetic nanoparticles by exposing them to dynamic magnetic fields. In the Field-Free Line (FFL) scanner topology, the spatial encoding of the particle distribution is performed by applying magnetic fields vanishing on straight lines. The voltage induced in the receiving coils by the particles when exposed to the magnetic fields constitute the signal from which the particle distribution is to be reconstructed. To avoid lengthy calibration, model-based reconstruction formulae have been developed for the 2D FFL scanning topology. In this work we develop reconstruction formulae for 3D FFL. Moreover, we provide a model-based reconstruction algorithm for 3D FFL and we validate it with a numerical experiment.}
 }
